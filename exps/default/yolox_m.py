@@ -13,3 +13,11 @@ class Exp(MyExp):
         self.depth = 0.67
         self.width = 0.75
         self.exp_name = os.path.split(os.path.realpath(__file__))[1].split(".")[0]
+
+        self.multiscale_range = 0 #
+
+        self.max_epoch = 36
+        self.warmup_epochs = 2
+        self.no_aug_epochs = 30
+        self.print_interval = 20
+        self.eval_interval = 1

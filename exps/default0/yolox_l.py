@@ -10,14 +10,6 @@ from yolox.exp import Exp as MyExp
 class Exp(MyExp):
     def __init__(self):
         super(Exp, self).__init__()
-        self.depth = 0.33
-        self.width = 0.50
+        self.depth = 1.0
+        self.width = 1.0
         self.exp_name = os.path.split(os.path.realpath(__file__))[1].split(".")[0]
-
-        self.multiscale_range = 0 #
-
-        self.max_epoch = 36
-        self.warmup_epochs = 2
-        self.no_aug_epochs = 30
-        self.print_interval = 20
-        self.eval_interval = 1
