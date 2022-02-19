@@ -26,8 +26,8 @@ class Exp(MyExp):
 
         self.max_epoch = 36
         self.warmup_epochs = 2
-        self.no_aug_epochs = 30
-        self.print_interval = 20
+        self.no_aug_epochs = 6
+        self.print_interval = 100
         self.eval_interval = 1
 
     def get_model(self, sublinear=False):

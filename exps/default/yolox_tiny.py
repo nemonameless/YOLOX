@@ -11,7 +11,7 @@ class Exp(MyExp):
         super(Exp, self).__init__()
         self.depth = 0.33
         self.width = 0.375
-        self.input_scale = (416, 416)
+        self.input_size = (416, 416)
         self.mosaic_scale = (0.5, 1.5)
         #self.random_size = (10, 20)
         self.test_size = (416, 416)
@@ -25,6 +25,6 @@ class Exp(MyExp):
 
         self.max_epoch = 36
         self.warmup_epochs = 2
-        self.no_aug_epochs = 30
-        self.print_interval = 20
+        self.no_aug_epochs = 6
+        self.print_interval = 100
         self.eval_interval = 1
